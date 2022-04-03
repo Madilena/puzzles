@@ -4,11 +4,12 @@ import "fmt"
 
 func main() {
 	nums := []int{0, 6, 10, 25}
-	result := twoSum(nums, 31)
+	result := twoSumBf(nums, 31)
 	fmt.Println(result)
 }
 
-func twoSum(nums []int, target int) [][]int {
+//brute force solution
+func twoSumBf(nums []int, target int) [][]int {
 	//make a slice of arrays.
 	//We want a slice of arrays to account for multiple ways to hit the target
 	var s [][]int

@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	s := "racecar"
@@ -8,8 +11,8 @@ func main() {
 	fmt.Println(result)
 }
 
-func isPalindrome(s string) bool {
-
+func isPalindrome(text string) bool {
+	s := strings.ReplaceAll(text, " ", "")
 	for i := 0; i < len(s); i++ {
 		forward := string(s[i])
 		backward := string(s[len(s)-1-i])

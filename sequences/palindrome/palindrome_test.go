@@ -15,6 +15,16 @@ func TestPalindromeHappy(t *testing.T) {
 	}
 }
 
+func TestPalindromeFunny(t *testing.T) {
+	s := "go hang a salami im a lasagna hog"
+	expected := true
+	actual := isPalindrome(s)
+
+	if !(reflect.DeepEqual(actual, expected)) {
+		t.Fatalf("Expected %t, got %t", expected, actual)
+	}
+}
+
 func TestPalindromeSad(t *testing.T) {
 	s := "too"
 	expected := false
