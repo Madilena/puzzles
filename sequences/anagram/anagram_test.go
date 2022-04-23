@@ -1,7 +1,6 @@
 package main
 
 import (
-	"reflect"
 	"testing"
 )
 
@@ -11,7 +10,7 @@ func TestAnagramHappy(t *testing.T) {
 	expected := true
 	actual := isAnagram(s, b)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %t, got %t", expected, actual)
 	}
 }
@@ -22,7 +21,7 @@ func TestAnagramSad(t *testing.T) {
 	expected := false
 	actual := isAnagram(s, b)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %t, got %t", expected, actual)
 	}
 }

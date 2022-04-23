@@ -1,7 +1,6 @@
 package main
 
 import (
-	"reflect"
 	"testing"
 )
 
@@ -10,7 +9,7 @@ func TestMaxSubArray(t *testing.T) {
 	expected := []int{0, 0, 9, 0, 0}
 	actual := productExceptSelf(test)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %d, got %d", expected, actual)
 	}
 }

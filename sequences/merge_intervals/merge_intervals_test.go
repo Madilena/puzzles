@@ -10,7 +10,7 @@ func TestMergeIntervals(t *testing.T) {
 	expected := [][]int{{1, 6}, {8, 10}, {15, 18}}
 	actual := merge(nums)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %d, got %d", expected, actual)
 	}
 }
@@ -20,7 +20,7 @@ func TestMergeIntervalsAgain(t *testing.T) {
 	expected := [][]int{{1, 5}}
 	actual := merge(nums)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %d, got %d", expected, actual)
 	}
 }

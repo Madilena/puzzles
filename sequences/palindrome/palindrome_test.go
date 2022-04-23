@@ -1,7 +1,6 @@
 package main
 
 import (
-	"reflect"
 	"testing"
 )
 
@@ -10,7 +9,7 @@ func TestPalindromeHappy(t *testing.T) {
 	expected := true
 	actual := isPalindrome(s)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %t, got %t", expected, actual)
 	}
 }
@@ -20,7 +19,7 @@ func TestPalindromeFunny(t *testing.T) {
 	expected := true
 	actual := isPalindrome(s)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %t, got %t", expected, actual)
 	}
 }
@@ -30,7 +29,7 @@ func TestPalindromeSad(t *testing.T) {
 	expected := false
 	actual := isPalindrome(s)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %t, got %t", expected, actual)
 	}
 }

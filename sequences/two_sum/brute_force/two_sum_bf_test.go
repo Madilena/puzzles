@@ -1,7 +1,6 @@
 package main
 
 import (
-	"reflect"
 	"testing"
 )
 
@@ -11,7 +10,7 @@ func TestTwoSum(t *testing.T) {
 	expected := [][]int{[]int{1, 3}}
 	actual := twoSumBf(nums, target)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %d, got %d", expected, actual)
 	}
 }
@@ -22,7 +21,7 @@ func TestTwoSumMiddle(t *testing.T) {
 	expected := [][]int{[]int{1, 2}}
 	actual := twoSumBf(nums, target)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %d, got %d", expected, actual)
 	}
 }
@@ -33,7 +32,7 @@ func TestTwoSumBothBoundary(t *testing.T) {
 	expected := [][]int{[]int{0, 5}}
 	actual := twoSumBf(nums, target)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %d, got %d", expected, actual)
 	}
 }
@@ -44,7 +43,7 @@ func TestTwoSumZero(t *testing.T) {
 	expected := [][]int{[]int{1, 3}}
 	actual := twoSumBf(nums, target)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %d, got %d", expected, actual)
 	}
 }
@@ -55,7 +54,7 @@ func TestTwoResultsZero(t *testing.T) {
 	expected := [][]int{[]int{1, 4}, []int{3, 5}}
 	actual := twoSumBf(nums, target)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %d, got %d", expected, actual)
 	}
 }
@@ -66,7 +65,7 @@ func TestThreeResultsZero(t *testing.T) {
 	expected := [][]int{[]int{0, 6}, []int{1, 5}, []int{2, 3}}
 	actual := twoSumBf(nums, target)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %d, got %d", expected, actual)
 	}
 }

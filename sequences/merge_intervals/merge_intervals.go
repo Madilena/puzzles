@@ -28,7 +28,9 @@ func merge(intervals [][]int) [][]int {
         lastInterval := result[len(result) - 1]
 
         if lastInterval[1] < interval[0] {
+			fmt.Println(result)
             result = append(result, interval)
+			fmt.Println(result)
         } else if interval[1] > lastInterval[1] {
             lastInterval[1] = interval[1]
         }

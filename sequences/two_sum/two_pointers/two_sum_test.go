@@ -1,7 +1,6 @@
 package main
 
 import (
-	"reflect"
 	"testing"
 )
 
@@ -11,7 +10,7 @@ func TestTwoSumFast(t *testing.T) {
 	expected := []int{1, 3}
 	actual := twoSum(nums, target)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %d, got %d", expected, actual)
 	}
 }

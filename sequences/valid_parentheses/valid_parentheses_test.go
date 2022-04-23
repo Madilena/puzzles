@@ -10,7 +10,7 @@ func TestInValidParenthes(t *testing.T) {
 	expected := false
 	actual := isValid(s)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %t, got %t", expected, actual)
 	}
 }
@@ -20,7 +20,7 @@ func TestValidParenthes(t *testing.T) {
 	expected := true
 	actual := isValid(s)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %t, got %t", expected, actual)
 	}
 }

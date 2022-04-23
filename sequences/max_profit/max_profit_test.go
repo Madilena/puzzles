@@ -1,7 +1,6 @@
 package main
 
 import (
-	"reflect"
 	"testing"
 )
 
@@ -10,7 +9,7 @@ func TestMaxProfit(t *testing.T) {
 	expected := 6
 	actual := maxProfit(nums)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %d, got %d", expected, actual)
 	}
 }
@@ -20,7 +19,7 @@ func TestMaxProfitZero(t *testing.T) {
 	expected := 0
 	actual := maxProfit(nums)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %d, got %d", expected, actual)
 	}
 }
@@ -30,7 +29,7 @@ func TestMaxProfitBoundaries(t *testing.T) {
 	expected := 1
 	actual := maxProfit(nums)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %d, got %d", expected, actual)
 	}
 }
@@ -40,7 +39,7 @@ func TestMaxProfitBoundariesA(t *testing.T) {
 	expected := 3
 	actual := maxProfit(nums)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %d, got %d", expected, actual)
 	}
 }
@@ -50,7 +49,7 @@ func TestMaxProfitBoundariesMix(t *testing.T) {
 	expected := 3
 	actual := maxProfit(nums)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %d, got %d", expected, actual)
 	}
 }
@@ -60,7 +59,7 @@ func TestMaxProfitDuplicate(t *testing.T) {
 	expected := 2
 	actual := maxProfit(nums)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %d, got %d", expected, actual)
 	}
 }
@@ -70,7 +69,7 @@ func TestMaxProfitResetMax(t *testing.T) {
 	expected := 4
 	actual := maxProfit(nums)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %d, got %d", expected, actual)
 	}
 }
@@ -79,7 +78,7 @@ func TestMaxProfitResetResult(t *testing.T) {
 	expected := 4
 	actual := maxProfit(nums)
 
-	if !(reflect.DeepEqual(actual, expected)) {
+	if !(actual == expected) {
 		t.Fatalf("Expected %d, got %d", expected, actual)
 	}
 }
