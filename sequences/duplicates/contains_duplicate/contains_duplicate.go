@@ -8,6 +8,7 @@ func main() {
 	fmt.Println(result)
 }
 
+//this is a big o of n^2
 func containsDuplicate(nums []int) bool {
 	for i := 0; i < len(nums); i++ {
 		for j := i + 1; j < len(nums); j++ {
